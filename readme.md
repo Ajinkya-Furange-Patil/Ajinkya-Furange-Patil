@@ -224,6 +224,8 @@ features:
   - Educates users on digital fraud prevention in real-time
 ```
 
+[📂 Code Repository](https://github.com/samruddhidurge05/codewave-hackthon)
+
 </details>
 
 <details>
