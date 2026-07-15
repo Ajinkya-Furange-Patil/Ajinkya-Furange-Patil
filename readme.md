@@ -126,7 +126,7 @@
 | **2nd Prize — Bug Buster** | Code Debugging Inter-College Technical Competition | **2026** |
 | **Top 10 Finalist** | The Lost Probe AI Challenge — VJTI Mumbai | **2026** |
 | **Top 10 Finalist** | Codeverse 3.0 Hackathon | **2026** |
-| **Team Manager** | National Entrepreneurship Challenge — E-Cell IIT Bombay | **2025** |
+| **Vice President** | National Entrepreneurship Challenge — E-Cell IIT Bombay | **2025** |
 | **Campus Ambassador** | IIT Bombay (Representing Institution & Cultivating Innovation) | **Active** |
 | **Open Source Contributor** | Youth Season of Code (Y-SoC) | **2025–26** |
 
@@ -189,6 +189,8 @@ method: Analyzes congestion patterns in real time without capturing PII
 deliverable: Real-time evacuation guidance and alerts
 ```
 
+[📂 Code Repository](https://github.com/Ajinkya-Furange-Patil/S-RAY)
+
 </details>
 
 <details>
@@ -204,6 +206,8 @@ features:
   - Real-time form mapping to optimize user input workflow
   - Built with Manifest V3 for tight privacy, security, and low CPU footprint
 ```
+
+[📂 Code Repository](https://github.com/Ajinkya-Furange-Patil/SmartFill)
 
 </details>
 
@@ -240,19 +244,6 @@ verdict: "The platform looked compliant. It was not."
 
 </details>
 
-<details>
-<summary><b>📌 EXHIBIT F — SBOM Ghost Analysis</b></summary>
-<br/>
-
-```yaml
-target: Authoritative SBOM vs AI-generated "Ghost" SBOM
-method: Field-level accuracy analysis across thousands of components
-tools: Python, pandas, ReportLab
-deliverable: Formatted PDF comparison report
-verdict: "The ghost was convincing. The data disagreed."
-```
-
-</details>
 
 <details>
 <summary><b>📌 EXHIBIT G — MCP Network Discovery Tool</b></summary>
