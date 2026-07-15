@@ -248,6 +248,26 @@ verdict: "The platform looked compliant. It was not."
 
 
 <details>
+<summary><b>📌 EXHIBIT F — Simsetu: OTP Phishing Simulator</b></summary>
+<br/>
+
+```yaml
+target: OTP-based social engineering scam awareness
+type: Interactive web-based cybersecurity simulator
+stack: HTML, CSS, JavaScript
+features:
+  - Dual-perspective roleplay (victim and scammer simulation)
+  - Interactive OTP generation, transmission, and entry flows
+  - Urgency and social engineering simulation scenarios
+  - Minimalist design tailored for workshops and classroom demos
+```
+
+[📂 Code Repository](https://github.com/samruddhidurge05/Simsetu)
+
+</details>
+
+
+<details>
 <summary><b>📌 EXHIBIT G — MCP Network Discovery Tool</b></summary>
 <br/>
 
