@@ -325,12 +325,12 @@ verdict: "If it's on the network, it gets found."
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Ajinkya-Furange-Patil&show_icons=true&theme=dark&bg_color=0d0d0d&title_color=39FF14&icon_color=39FF14&text_color=c9d1d9&border_color=39FF14&hide_border=true" width="48%" />
+<img src="https://github-readme-stats-anuraghazra.vercel.app/api?username=Ajinkya-Furange-Patil&show_icons=true&theme=dark&bg_color=0d0d0d&title_color=39FF14&icon_color=39FF14&text_color=c9d1d9&border_color=39FF14&hide_border=true" width="48%" />
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ajinkya-Furange-Patil&theme=dark&background=0d0d0d&stroke=39FF14&ring=39FF14&fire=39FF14&currStreakLabel=39FF14&border=39FF14&hide_border=true" width="48%" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ajinkya-Furange-Patil&layout=compact&theme=dark&bg_color=0d0d0d&title_color=39FF14&text_color=c9d1d9&border_color=39FF14&hide_border=true" width="48%" />
+<img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs/?username=Ajinkya-Furange-Patil&layout=compact&theme=dark&bg_color=0d0d0d&title_color=39FF14&text_color=c9d1d9&border_color=39FF14&hide_border=true" width="48%" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=Ajinkya-Furange-Patil&theme=darkhub&no-frame=true&row=1&margin-w=15" width="90%" />
+<img src="https://github-profile-trophy-tawny.vercel.app/?username=Ajinkya-Furange-Patil&theme=darkhub&no-frame=true&row=1&margin-w=15" width="90%" />
 
 </div>
 
