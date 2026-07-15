@@ -9,6 +9,10 @@
 ![Clearance](https://img.shields.io/badge/CLEARANCE-LEVEL_4-39FF14?style=flat-square&labelColor=0d0d0d)
 ![Threat](https://img.shields.io/badge/THREAT_LEVEL-HIGH_TO_VULN_CODE-39FF14?style=flat-square&labelColor=0d0d0d)
 
+<br/><br/>
+
+<img src="./assets/security-scanner.svg" width="900" alt="Security Scanner" />
+
 </div>
 
 <br/>
