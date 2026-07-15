@@ -21,19 +21,49 @@
       80% { transform: translate(2px, -2px) }
       100% { transform: translate(0) }
     }
-    .grid-line { stroke: #39FF14; stroke-width: 0.5; opacity: 0.15; }
-    .radar-circle { stroke: #39FF14; stroke-width: 1; fill: none; opacity: 0.25; }
+    .grid-line { stroke: #39FF14; stroke-width: 0.5; opacity: 0.15; transition: opacity 0.3s; }
+    .grid-line:hover { opacity: 0.45; }
+    
+    .radar-circle { stroke: #39FF14; stroke-width: 1; fill: none; opacity: 0.25; transition: stroke 0.3s, stroke-width 0.3s, opacity 0.3s; }
+    .radar-circle:hover { stroke: #ffffff; stroke-width: 2; opacity: 0.8; cursor: crosshair; }
+    
     .pulse-circle { stroke: #39FF14; stroke-width: 1.5; fill: none; transform-origin: 400px 150px; animation: ping 4s infinite linear; }
-    .radar-sweep { fill: url(#radar-grad); transform-origin: 400px 150px; animation: sweep 6s infinite linear; }
-    .node { fill: #39FF14; animation: pulse 2s infinite ease-in-out; }
-    .text-glow { font-family: 'Courier New', Courier, monospace; fill: #39FF14; font-size: 11px; letter-spacing: 2px; }
+    
+    .radar-sweep { fill: url(#radar-grad); transform-origin: 400px 150px; animation: sweep 6s infinite linear; transition: opacity 0.3s; pointer-events: visiblePainted; }
+    .radar-sweep:hover { animation-duration: 1.5s; opacity: 0.6; fill: url(#radar-grad-hover); cursor: progress; }
+    
+    .node { fill: #39FF14; transition: fill 0.3s, r 0.3s, stroke-width 0.3s; animation: pulse 2s infinite ease-in-out; cursor: pointer; }
+    .node:hover { fill: #ffffff; stroke: #39FF14; stroke-width: 2px; r: 8px; animation-play-state: paused; opacity: 1 !important; }
+    
+    .text-glow { font-family: 'Courier New', Courier, monospace; fill: #39FF14; font-size: 11px; letter-spacing: 2px; transition: fill 0.3s, text-shadow 0.3s; }
     .glitch-text { animation: glitch 4s infinite step-end; }
+    
+    /* Interactive Buttons */
+    .interactive-btn { cursor: pointer; }
+    .btn-bg { fill: #0d0d0d; stroke: #39FF14; stroke-width: 1; opacity: 0.7; transition: fill 0.3s, stroke-width 0.3s, opacity 0.3s; }
+    
+    .btn-left { transform-origin: 140px 250px; transition: transform 0.2s ease; }
+    .btn-left:hover { transform: scale(1.05); }
+    .btn-left:hover .btn-bg { fill: #39FF14; fill-opacity: 0.15; stroke-width: 1.5; opacity: 1; }
+    .btn-left:hover .btn-text { fill: #ffffff; text-shadow: 0 0 5px #39FF14; }
+    .btn-left:active { transform: scale(0.95); }
+    
+    .btn-right { transform-origin: 660px 250px; transition: transform 0.2s ease; }
+    .btn-right:hover { transform: scale(1.05); }
+    .btn-right:hover .btn-bg { fill: #39FF14; fill-opacity: 0.15; stroke-width: 1.5; opacity: 1; }
+    .btn-right:hover .btn-text { fill: #ffffff; text-shadow: 0 0 5px #39FF14; }
+    .btn-right:active { transform: scale(0.95); }
   </style>
   <defs>
     <radialGradient id="radar-grad" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/>
       <stop offset="90%" stop-color="#39FF14" stop-opacity="0.05"/>
       <stop offset="100%" stop-color="#39FF14" stop-opacity="0.3"/>
+    </radialGradient>
+    <radialGradient id="radar-grad-hover" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="90%" stop-color="#39FF14" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0.6"/>
     </radialGradient>
   </defs>
 
@@ -95,10 +125,15 @@
   <text x="580" y="60" class="text-glow" opacity="0.6">RANGE: 4200m</text>
   <text x="580" y="80" class="text-glow" opacity="0.6">NODES ONLINE: 14</text>
 
-  <!-- Status Box -->
-  <rect x="30" y="230" width="220" height="40" fill="none" stroke="#39FF14" stroke-width="1" opacity="0.7"/>
-  <text x="40" y="254" class="text-glow" font-weight="bold">THREAT LEVEL: NEUTRALIZED</text>
+  <!-- Interactive Button Left -->
+  <g class="interactive-btn btn-left">
+    <rect x="30" y="230" width="220" height="40" class="btn-bg" rx="4"/>
+    <text x="45" y="254" class="text-glow btn-text" font-weight="bold">THREAT LEVEL: NEUTRALIZED</text>
+  </g>
 
-  <rect x="550" y="230" width="220" height="40" fill="none" stroke="#39FF14" stroke-width="1" opacity="0.7"/>
-  <text x="560" y="254" class="text-glow" font-weight="bold">DECRYPTING LOGS...</text>
+  <!-- Interactive Button Right -->
+  <g class="interactive-btn btn-right">
+    <rect x="550" y="230" width="220" height="40" class="btn-bg" rx="4"/>
+    <text x="575" y="254" class="text-glow btn-text" font-weight="bold">DECRYPT SYSTEM LOGS</text>
+  </g>
 </svg>
